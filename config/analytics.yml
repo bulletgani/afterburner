@@ -1,0 +1,65 @@
+# top level keys are 'event_id's for analytics
+# for each event, this file defines
+#   1) a priority level in [0,1,2] where 0 is super-critically-high priority and 2 is "meh" priority
+#   2) a list of keys expected in the event data
+#   3) (implicitly) a mapping of those keys to mysql fields for the analytics database
+# note that all events implicitly accept user_id and system_time, those do not need to be defined here
+record_wall_post:
+  priority: 0
+  data:
+    - src
+    - post_id
+
+try_login:
+  priority: 0
+  data:
+    - src
+    - ad_id
+    - sender_id
+    - offer_id
+
+login_success:
+  priority: 0
+  data:
+    - src
+    - ad_id
+    - sender_id
+    - offer_id
+
+new_user:
+  priority: 0
+  data:
+    - src
+    - ad_id
+    - sender_id
+    - offer_id
+
+enter_app:
+  priority: 0
+
+init_app:
+  priority: 0
+  data:
+    - dummy1
+    - dummy2
+    - dummy3
+    - dummy4
+    - user_meters
+    - user_items
+    - user_friends
+
+purchase_attempt:
+  priority: 0
+  data:
+    - order_info
+
+purchase_order_placed:
+  priority: 0
+  data:
+    - order_details
+
+purchase_order_completed:
+  priority: 0
+  data:
+    - order_details
+
