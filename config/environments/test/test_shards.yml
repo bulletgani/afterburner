@@ -1,0 +1,36 @@
+vbucket_count: 720
+
+db:
+  master:
+    ip: 'localhost'
+  generic:
+    shards_count: 2
+    0:
+      ip: 'localhost'
+    1:
+      ip: 'localhost'
+redis:
+  data:
+    shards_count: 2
+    0:
+      ip: 'localhost'
+      port: 6379
+    1:
+      ip: 'localhost'
+      port: 6379
+  queue:
+    shards_count: 2
+    0:
+      ip: 'localhost'
+      port: 6379
+    1:
+      ip: 'localhost'
+      port: 6379
+  cache:
+    shards_count: 2
+    0:
+      ip: 'localhost'
+      port: 6379
+    1:
+      ip: 'localhost'
+      port: 6379

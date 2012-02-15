@@ -1,0 +1,9 @@
+GEM
+  specs:
+    mysql2 (0.3.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mysql2 (= 0.3.7)
