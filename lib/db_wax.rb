@@ -7,6 +7,7 @@ class ShardsConfig
     attr_accessor :VBUCKET_COUNT
     attr_accessor :CONFIG
     attr_accessor :parsed
+    attr_accessor :REF
   end
 
   def self.directory()
@@ -15,6 +16,7 @@ class ShardsConfig
 
   def self.read_config
     unless ShardsConfig.parsed
+      ShardsConfig.REF = -1
       ShardsConfig.CONFIG = {}
       shard_yml = YAML::load(ERB.new(IO.read(ShardsConfig.directory() + "config/environments/#{::Rails.env}_shards.yml")).result)
       # blowup and stop if this fails
@@ -52,6 +54,12 @@ class ShardsConfig
     end
   end
 end
+
+REF = -1
+
+# create global shards hash
+ShardsConfig.read_config()
+
 
 require 'db_wax/sharded_model'
 require 'db_wax/sharded_associations'

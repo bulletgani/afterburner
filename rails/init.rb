@@ -1,13 +1,6 @@
 require 'db_wax'
 
 
-############ SHARDING CONSTANTS ###############
-# reference vbucket -1
-REF = -1
-
-# create global shards hash
-ShardsConfig.read_config()
-
 ############## AR extensions ##################
 
 class ActiveRecord::Base
