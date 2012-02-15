@@ -1,3 +1,6 @@
+require "yaml"
+require "erb"
+
 class ShardsConfig
 
   class << self
@@ -6,10 +9,14 @@ class ShardsConfig
     attr_accessor :parsed
   end
 
+  def self.directory()
+    @directory ||= defined?(Rails) ?  Rails.root.to_s : Dir.pwd
+  end
+
   def self.read_config
     unless ShardsConfig.parsed
       ShardsConfig.CONFIG = {}
-      shard_yml = YAML::load(ERB.new(IO.read("config/environments/#{::Rails.env}_shards.yml")).result)
+      shard_yml = YAML::load(ERB.new(IO.read(ShardsConfig.directory() + "config/environments/#{::Rails.env}_shards.yml")).result)
       # blowup and stop if this fails
 
       # Virtual bucket
@@ -45,3 +52,11 @@ class ShardsConfig
     end
   end
 end
+
+require 'db_wax/sharded_model'
+require 'db_wax/sharded_associations'
+require 'db_wax/sharded_redis'
+require 'db_wax/analytics'
+require 'db_wax/vbucket_setup'
+require 'db_wax/acts_as_locally_cached'
+

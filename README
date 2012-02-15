@@ -1,0 +1,14 @@
+Add this to environment.rb
+
+if defined?(PhusionPassenger)
+  PhusionPassenger.on_event(:starting_worker_process) do |forked|
+    # Only works with DalliStore
+    #Rails.cache.reset if forked
+    if forked
+      UUID.generator.next_sequence
+      RedisCache.shard_reset
+      RedisData.shard_reset
+      RedisQueue.shard_reset
+    end
+  end
+end
