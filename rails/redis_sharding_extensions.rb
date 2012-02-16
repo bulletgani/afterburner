@@ -1,4 +1,4 @@
-ShardsConfig.CONFIG['redis'].keys.each do |key|
+Afterburner.SHARDS_CONFIG['redis'].keys.each do |key|
   klass = Object.const_set("Redis#{key.capitalize}", Class.new)
   klass.class_eval do
     include ShardedRedis

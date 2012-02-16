@@ -1,15 +1,15 @@
 <% ENV['TEST_ENV_NUMBER'] ||= '' %>
 
 <% require 'shards_config' %>
-<% ShardsConfig.read_config %>
+<% Afterburner.read_config %>
 
 <%= "#{ENV['RAILS_ENV']}: &#{ENV['RAILS_ENV']}"%>
   adapter: mysql2
   encoding: utf8
   database: <%= ENV['RAILS_ENV']=='test' ? ENV['RAILS_ENV'] + ENV['TEST_ENV_NUMBER'] : ENV['RAILS_ENV']%>
-  username: <%= ShardsConfig.CONFIG['db']['master']['username'] ? ShardsConfig.CONFIG['db']['master']['username'] : 'root'%>
-  password: <%=  ShardsConfig.CONFIG['db']['master']['password'] if  ShardsConfig.CONFIG['db']['master']['password'] %>
-  host: <%= ShardsConfig.CONFIG['db']['master']['ip']%>
-  port: <%= ShardsConfig.CONFIG['db']['master']['port'] || 3306 %>
+  username: <%= Afterburner.SHARDS_CONFIG['db']['master']['username'] ? Afterburner.SHARDS_CONFIG['db']['master']['username'] : 'root'%>
+  password: <%=  Afterburner.SHARDS_CONFIG['db']['master']['password'] if  Afterburner.SHARDS_CONFIG['db']['master']['password'] %>
+  host: <%= Afterburner.SHARDS_CONFIG['db']['master']['ip']%>
+  port: <%= Afterburner.SHARDS_CONFIG['db']['master']['port'] || 3306 %>
   pool: 24
 

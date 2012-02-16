@@ -1,6 +1,6 @@
 <% ENV['TEST_ENV_NUMBER'] ||= '' %>
 <% require 'shards_config' %>
-<% ShardsConfig.read_config %>
+<% Afterburner.read_config %>
 
 octopus:
   environments:
@@ -9,18 +9,18 @@ octopus:
 
   <%= "#{ENV['RAILS_ENV']}:"%>
     shards:
-<% ShardsConfig.CONFIG['db'].keys.each do |k|%>
+<% Afterburner.SHARDS_CONFIG['db'].keys.each do |k|%>
 <% unless k == 'master'%>
-<% ShardsConfig.CONFIG['db'][k]['shards_count'].times do |s| %>
+<% Afterburner.SHARDS_CONFIG['db'][k]['shards_count'].times do |s| %>
 <% db_name =  k == 'generic' ? "shard_#{s}_#{ENV['RAILS_ENV']}" : "shard_#{k}_#{s}_#{ENV['RAILS_ENV']}"%>
       <%= db_name %>:
         adapter: mysql2
         encoding: utf8
         database: <%= (db_name.include? 'test') ? (db_name + ENV['TEST_ENV_NUMBER']) : db_name %>
-        username: <%= ShardsConfig.CONFIG['db'][k][s]['username'] ? ShardsConfig.CONFIG['db'][k][s]['username'] : 'root'%>
-        password: <%=  ShardsConfig.CONFIG['db'][k][s]['password'] if  ShardsConfig.CONFIG['db'][k][s]['password'] %>
-        host: <%= ShardsConfig.CONFIG['db'][k][s]['ip']%>
-        port: <%= ShardsConfig.CONFIG['db'][k][s]['port'] || 3306 %>
+        username: <%= Afterburner.SHARDS_CONFIG['db'][k][s]['username'] ? Afterburner.SHARDS_CONFIG['db'][k][s]['username'] : 'root'%>
+        password: <%=  Afterburner.SHARDS_CONFIG['db'][k][s]['password'] if  Afterburner.SHARDS_CONFIG['db'][k][s]['password'] %>
+        host: <%= Afterburner.SHARDS_CONFIG['db'][k][s]['ip']%>
+        port: <%= Afterburner.SHARDS_CONFIG['db'][k][s]['port'] || 3306 %>
         pool: 24
 <% end %>
 <% end %>

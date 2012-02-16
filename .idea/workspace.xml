@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a82d9ce2-8368-42c0-b339-f72b1510a08f" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/db_wax.gemspec" afterPath="$PROJECT_DIR$/afterburner.gemspec" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/db_wax.rb" afterPath="$PROJECT_DIR$/lib/afterburner.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/db_wax/acts_as_locally_cached.rb" afterPath="$PROJECT_DIR$/lib/afterburner/acts_as_locally_cached.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/db_wax/analytics.rb" afterPath="$PROJECT_DIR$/lib/afterburner/analytics.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/db_wax/sharded_associations.rb" afterPath="$PROJECT_DIR$/lib/afterburner/sharded_associations.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/db_wax/sharded_model.rb" afterPath="$PROJECT_DIR$/lib/afterburner/sharded_model.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/db_wax/sharded_redis.rb" afterPath="$PROJECT_DIR$/lib/afterburner/sharded_redis.rb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/db_wax/vbucket_setup.rb" afterPath="$PROJECT_DIR$/lib/afterburner/vbucket_setup.rb" />
+    <list default="true" id="06fcdb64-2c1c-4a58-a3d4-17023f94d606" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/afterburner.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/install_afterburner.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/db_wax.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rails/init.rb" afterPath="$PROJECT_DIR$/rails/init.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/shards.yml" afterPath="$PROJECT_DIR$/config/shards.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/afterburner.rb" afterPath="$PROJECT_DIR$/lib/afterburner.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/afterburner/sharded_model.rb" afterPath="$PROJECT_DIR$/lib/afterburner/sharded_model.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/afterburner/sharded_redis.rb" afterPath="$PROJECT_DIR$/lib/afterburner/sharded_redis.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rails/redis_sharding_extensions.rb" afterPath="$PROJECT_DIR$/rails/redis_sharding_extensions.rb" />
     </list>
-    <ignored path="db_wax.iws" />
+    <ignored path="afterburner.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,14 +31,32 @@
     <disable_hints />
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="db_wax" />
+    <favorites_list name="afterburner" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="rails32.gemfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gemfiles/rails32.gemfile">
+      <file leaf-file-name="redis_sharding_extensions.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rails/redis_sharding_extensions.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="install_afterburner.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/generators/install_afterburner.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="95" selection-start="589" selection-end="589" vertical-scroll-proportion="0.13850416">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="afterburner.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/afterburner.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="28" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -57,21 +75,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/environments/test/test.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/__db_wax_init.rb" />
-        <option value="$PROJECT_DIR$/init.rb" />
-        <option value="$PROJECT_DIR$/db_wax.gemspec" />
-        <option value="$PROJECT_DIR$/gemfiles/rails32.gemfile" />
-        <option value="$PROJECT_DIR$/Rakefile" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/rails/__sharding_constants.rb" />
-        <option value="$PROJECT_DIR$/config/environment.rb" />
-        <option value="$PROJECT_DIR$/README" />
-        <option value="$PROJECT_DIR$/rails/init.rb" />
-        <option value="$PROJECT_DIR$/lib/db_wax.rb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/lib/afterburner.rb" />
-        <option value="$PROJECT_DIR$/rails/redis_sharding_extensions.rb" />
-        <option value="$PROJECT_DIR$/afterburner.gemspec" />
+        <option value="$PROJECT_DIR$/lib/generators/install_afterburner.rb" />
       </list>
     </option>
   </component>
@@ -105,26 +111,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db_wax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db_wax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db_wax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -135,16 +121,126 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rails" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generators" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/rails" />
-      <recent name="$PROJECT_DIR$/lib/db_wax" />
-    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
@@ -263,34 +359,33 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a82d9ce2-8368-42c0-b339-f72b1510a08f" name="Default" comment="" />
-      <created>1329335739655</created>
-      <updated>1329335739655</updated>
+      <created>1329428667906</created>
+      <updated>1329428667906</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1024" height="1245" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976827" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976827" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33230454" sideWeight="0.6702317" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6702317" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976827" sideWeight="0.49691358" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976827" sideWeight="0.49588478" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976827" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32976827" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -346,94 +441,100 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/afterburner/sharded_model.rb">
+    <entry file="file://$PROJECT_DIR$/afterburner.gemspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/afterburner/sharded_associations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/afterburner/vbucket_setup.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/afterburner/analytics.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/afterburner/sharded_redis.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" />
+        <state line="9" column="27" selection-start="305" selection-end="316" vertical-scroll-proportion="0.12465374">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/afterburner/acts_as_locally_cached.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rails/init.rb">
+    <entry file="file://$PROJECT_DIR$/lib/afterburner/sharded_associations.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rails/redis_sharding_extensions.rb">
+    <entry file="file://$PROJECT_DIR$/lib/afterburner/sharded_model.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="196" selection-end="196" vertical-scroll-proportion="0.08211679">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/afterburner/sharded_redis.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/afterburner/vbucket_setup.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.032956686">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.0470915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/sharded_factory.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/init.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="43" selection-start="73" selection-end="73" vertical-scroll-proportion="0.027372263">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/afterburner.gemspec">
+    <entry file="file://$PROJECT_DIR$/rails/init.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="23" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.33240998">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/afterburner.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="16" selection-start="2479" selection-end="2479" vertical-scroll-proportion="0.7368421">
+        <state line="4" column="28" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gemfiles/rails32.gemfile">
+    <entry file="file://$PROJECT_DIR$/rails/redis_sharding_extensions.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/install_afterburner.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="95" selection-start="589" selection-end="589" vertical-scroll-proportion="0.13850416">
           <folding />
         </state>
       </provider>

@@ -13,7 +13,7 @@ module ShardedModel
 
 
     def get_vbucket(id)
-      Digest::MD5.hexdigest(id).gsub(/[a-z]/i) { |s| s.ord.to_s }.to_i % ShardsConfig.VBUCKET_COUNT
+      Digest::MD5.hexdigest(id).gsub(/[a-z]/i) { |s| s.ord.to_s }.to_i % Afterburner.VBUCKET_COUNT
     end
 
 
@@ -38,10 +38,10 @@ module ShardedModel
       result = []
       # brute force for now .... optimize later
       shard_name = ''
-      shard_count = ShardsConfig.CONFIG['db']['generic']['shards_count']
+      shard_count = Afterburner.SHARDS_CONFIG['db']['generic']['shards_count']
       if self.MODEL_SHARD == true
         shard_name = self.name.underscore+'_'
-        shard_count = ShardsConfig.CONFIG['db'][self.name.underscore]['shards_count']
+        shard_count = Afterburner.SHARDS_CONFIG['db'][self.name.underscore]['shards_count']
       end
       shard_count.times do |s|
         if type == :each
@@ -71,10 +71,10 @@ module ShardedModel
     def in_each_db(*options)
       result = {}
       result['master'] = self.using(get_shard_name(REF)).send(*options)
-      ShardsConfig.CONFIG['db'].keys.each do |key|
+      Afterburner.SHARDS_CONFIG['db'].keys.each do |key|
         next if key == 'master'
         result[key] = {}
-        ShardsConfig.CONFIG['db'][key]['shards_count'].times do |c|
+        Afterburner.SHARDS_CONFIG['db'][key]['shards_count'].times do |c|
           shard_name = key == 'generic' ? c.to_s : "#{key}_#{c}"
           result[key][c] = self.using("shard_#{shard_name}_#{::Rails.env}".to_sym).send(*options)
         end
@@ -84,21 +84,21 @@ module ShardedModel
 
     def get_shard_name(vbucket)
       return :master if ENV['SINGLE_SHARD'].to_s == 'true'
-      shard_count = ShardsConfig.CONFIG['db']['generic']['shards_count']
+      shard_count = Afterburner.SHARDS_CONFIG['db']['generic']['shards_count']
       if vbucket != REF
         shard_id = ''
         if self.class == Class.class
           # in class method =>
           if self.MODEL_SHARD
             shard_id = self.name.underscore
-            shard_count = ShardsConfig.CONFIG['db'][shard_id]['shards_count']
+            shard_count = Afterburner.SHARDS_CONFIG['db'][shard_id]['shards_count']
             shard_id = "#{shard_id}_"
           end
         else
           # in instance method
           if self.class.MODEL_SHARD
             shard_id = self.class.name.underscore
-            shard_count = ShardsConfig.CONFIG['db'][shard_id]['shards_count']
+            shard_count = Afterburner.SHARDS_CONFIG['db'][shard_id]['shards_count']
             shard_id = "#{shard_id}_"
           end
         end

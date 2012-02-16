@@ -15,16 +15,16 @@ module ShardedRedis
     def read_config
       options = {}
       self.shards = self.shards || []
-      ShardsConfig.read_config
+      Afterburner.read_config
       # establish Redis cache/data/queue connections
-      ShardsConfig.CONFIG['redis'].keys.each_with_index do |k, index|
-        ShardsConfig.CONFIG['redis'][k]['shards_count'].times do |s|
+      Afterburner.SHARDS_CONFIG['redis'].keys.each_with_index do |k, index|
+        Afterburner.SHARDS_CONFIG['redis'][k]['shards_count'].times do |s|
           db_name = "shard_#{k}_#{s}_#{ENV['RAILS_ENV']}"
           self.shards << db_name.to_sym
           options[db_name.to_sym] = {}
-          options[db_name.to_sym][:host] = ShardsConfig.CONFIG['redis'][k][s]['ip']
-          options[db_name.to_sym][:port] = ShardsConfig.CONFIG['redis'][k][s]['port']
-          options[db_name.to_sym][:db] = s + index*ShardsConfig.CONFIG['redis'][k]['shards_count']
+          options[db_name.to_sym][:host] = Afterburner.SHARDS_CONFIG['redis'][k][s]['ip']
+          options[db_name.to_sym][:port] = Afterburner.SHARDS_CONFIG['redis'][k][s]['port']
+          options[db_name.to_sym][:db] = s + index*Afterburner.SHARDS_CONFIG['redis'][k]['shards_count']
         end
       end
       self.options = options
@@ -58,7 +58,7 @@ module ShardedRedis
     end
 
     def get_shard_name(type, vbucket)
-      id = vbucket % ShardsConfig.CONFIG['redis'][type]['shards_count']
+      id = vbucket % Afterburner.SHARDS_CONFIG['redis'][type]['shards_count']
       "shard_#{type}_#{id}_#{::Rails.env}".to_sym
     end
 

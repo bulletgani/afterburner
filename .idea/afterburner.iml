@@ -14,10 +14,13 @@
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.0.21, ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hiredis (v0.4.4, ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.0, ruby-1.9.3-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="macaddr (v1.5.0, ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.0.4, ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mysql2 (v0.3.11, ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="redis (v2.2.2, ruby-1.9.3-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="systemu (v2.4.2, ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.31, ruby-1.9.3-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="uuid (v2.3.4, ruby-1.9.3-p0) [gem]" level="application" />
   </component>
 </module>
 
