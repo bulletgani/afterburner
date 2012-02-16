@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency 'ar-octopus', :git => 'https://github.com/tchandy/octopus.git'
+
   s.add_dependency 'awesome_print'
   s.add_dependency 'mysql2', '>= 0.3.7'
   s.add_dependency 'hiredis', '~> 0.4.1'

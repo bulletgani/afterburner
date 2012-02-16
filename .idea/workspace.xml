@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06fcdb64-2c1c-4a58-a3d4-17023f94d606" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.bundle/config" afterPath="$PROJECT_DIR$/.bundle/config" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/afterburner.iml" afterPath="$PROJECT_DIR$/.idea/afterburner.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/afterburner.gemspec" afterPath="$PROJECT_DIR$/afterburner.gemspec" />
     </list>
     <ignored path="afterburner.iws" />
@@ -53,10 +55,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="afterburner.gemspec" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="afterburner.gemspec" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/afterburner.gemspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="42" selection-start="857" selection-end="857" vertical-scroll-proportion="0.26036644">
+            <state line="18" column="2" selection-start="815" selection-end="815" vertical-scroll-proportion="-10.8">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile.lock" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="29" selection-start="30" selection-end="57" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="44" selection-start="161" selection-end="161" vertical-scroll-proportion="0.055813953">
               <folding />
             </state>
           </provider>
@@ -89,6 +109,8 @@
         <option value="$PROJECT_DIR$/lib/generators/install_afterburner.rb" />
         <option value="$PROJECT_DIR$/lib/afterburner/version.rb" />
         <option value="$PROJECT_DIR$/afterburner.gemspec" />
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -452,13 +474,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="305" selection-end="316" vertical-scroll-proportion="0.12465374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/afterburner/acts_as_locally_cached.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -522,13 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/afterburner.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="28" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rails/redis_sharding_extensions.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -550,9 +558,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/afterburner.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="28" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/afterburner.gemspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="42" selection-start="857" selection-end="857" vertical-scroll-proportion="0.26036644">
+        <state line="18" column="2" selection-start="815" selection-end="815" vertical-scroll-proportion="-10.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="29" selection-start="30" selection-end="57" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="44" selection-start="161" selection-end="161" vertical-scroll-proportion="0.055813953">
           <folding />
         </state>
       </provider>
