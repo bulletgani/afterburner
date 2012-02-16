@@ -1,4 +1,4 @@
-require 'db_wax'
+require 'afterburner'
 
 
 ############## AR extensions ##################

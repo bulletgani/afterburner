@@ -1,4 +1,4 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in db_wax.gemspec
+# Specify your gem's dependencies in afterburner.gemspec
 gemspec

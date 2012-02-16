@@ -61,10 +61,10 @@ REF = -1
 ShardsConfig.read_config()
 
 
-require 'db_wax/sharded_model'
-require 'db_wax/sharded_associations'
-require 'db_wax/sharded_redis'
-require 'db_wax/analytics'
-require 'db_wax/vbucket_setup'
-require 'db_wax/acts_as_locally_cached'
+require 'afterburner/sharded_model'
+require 'afterburner/sharded_associations'
+require 'afterburner/sharded_redis'
+require 'afterburner/analytics'
+require 'afterburner/vbucket_setup'
+require 'afterburner/acts_as_locally_cached'
 

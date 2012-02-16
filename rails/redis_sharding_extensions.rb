@@ -4,6 +4,4 @@ ShardsConfig.CONFIG['redis'].keys.each do |key|
     include ShardedRedis
     self.classname_lower = key
   end
-
-
 end
