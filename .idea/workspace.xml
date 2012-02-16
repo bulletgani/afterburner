@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06fcdb64-2c1c-4a58-a3d4-17023f94d606" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/afterburner.iml" afterPath="$PROJECT_DIR$/.idea/afterburner.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/afterburner.gemspec" afterPath="$PROJECT_DIR$/afterburner.gemspec" />
     </list>
     <ignored path="afterburner.iws" />
@@ -54,7 +56,7 @@
       <file leaf-file-name="afterburner.gemspec" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/afterburner.gemspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.32485875">
+            <state line="18" column="42" selection-start="857" selection-end="857" vertical-scroll-proportion="0.26036644">
               <folding />
             </state>
           </provider>
@@ -550,7 +552,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/afterburner.gemspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.32485875">
+        <state line="18" column="42" selection-start="857" selection-end="857" vertical-scroll-proportion="0.26036644">
           <folding />
         </state>
       </provider>
