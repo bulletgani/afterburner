@@ -21,7 +21,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'mysql2', '>= 0.3.7'
   s.add_dependency 'hiredis', '~> 0.4.1'
   s.add_dependency 'redis', '~> 2.2.2'
-  s.add_dependency 'yaml'
-  s.add_dependency 'erb'
   s.add_dependency 'uuid'
 end
