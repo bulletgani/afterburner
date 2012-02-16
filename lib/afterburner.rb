@@ -16,7 +16,7 @@ module Afterburner
 
   def self.read_config
     unless self.shards_config_parsed
-      self.REF = -1
+      self.REF_VBUCKET = -1
       self.SHARDS_CONFIG = {}
       shard_yml = YAML::load(ERB.new(IO.read(Afterburner.directory() + "config/environments/#{::Rails.env}_shards.yml")).result)
       # blowup and stop if this fails
