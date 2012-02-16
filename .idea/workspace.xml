@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06fcdb64-2c1c-4a58-a3d4-17023f94d606" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/afterburner.iml" afterPath="$PROJECT_DIR$/.idea/afterburner.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/afterburner.rb" afterPath="$PROJECT_DIR$/lib/afterburner.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/afterburner/version.rb" afterPath="$PROJECT_DIR$/lib/afterburner/version.rb" />
     </list>
     <ignored path="afterburner.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="version.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="version.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/afterburner/version.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="51" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+            <state line="1" column="18" selection-start="37" selection-end="37" vertical-scroll-proportion="0.013953488">
               <folding />
             </state>
           </provider>
@@ -62,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="afterburner.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="afterburner.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/afterburner.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="36" selection-start="363" selection-end="363" vertical-scroll-proportion="0.18644068">
+            <state line="17" column="36" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,11 +85,11 @@
       <list>
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/lib/generators/install_afterburner.rb" />
-        <option value="$PROJECT_DIR$/lib/afterburner/version.rb" />
         <option value="$PROJECT_DIR$/afterburner.gemspec" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/Gemfile.lock" />
         <option value="$PROJECT_DIR$/lib/afterburner.rb" />
+        <option value="$PROJECT_DIR$/lib/afterburner/version.rb" />
       </list>
     </option>
   </component>
@@ -542,13 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/afterburner/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="51" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="169" selection-end="322" vertical-scroll-proportion="0.22325581">
@@ -579,7 +571,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/afterburner.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="36" selection-start="363" selection-end="363" vertical-scroll-proportion="0.18644068">
+        <state line="17" column="36" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/afterburner/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="18" selection-start="37" selection-end="37" vertical-scroll-proportion="0.013953488">
           <folding />
         </state>
       </provider>
