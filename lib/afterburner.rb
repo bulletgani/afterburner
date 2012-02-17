@@ -2,6 +2,7 @@ require "yaml"
 require "erb"
 
 module Afterburner
+  require 'afterburner/railtie'
 
   class << self
     attr_accessor :VBUCKET_COUNT
