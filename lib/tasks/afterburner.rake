@@ -1,8 +1,3 @@
-require 'bundler/gem_tasks'
-require 'rake'
-
-#Bundler::GemHelper.install_tasks :name => 'afterburner'
-
 require 'fileutils'
 include FileUtils::Verbose
 
