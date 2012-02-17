@@ -1,6 +1,7 @@
 module Afterburner
   module Generators
-    class InstallGenerator < Rails::Generators::Base
+    class InstallGenerator < Rails::Generators::NamedBase
+      namespace 'setup_shards'
       source_root File.expand_path('../../config', __FILE__)
       desc "Copies example database.yml, shards.yml to config and test_shards_yml to config/environments/"
 

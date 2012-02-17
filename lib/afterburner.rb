@@ -19,8 +19,6 @@ module Afterburner
       self.REF_VBUCKET = -1
       self.SHARDS_CONFIG = {}
       shard_yml = YAML::load(ERB.new(IO.read(Afterburner.directory() + "config/environments/#{::Rails.env}_shards.yml")).result)
-      # blowup and stop if this fails
-
       # Virtual bucket
       # Every sharded entry falls into exactly one bucket
       # A given set of buckets in each environment is mapped to a database based on SHARDS_COUNT
@@ -36,17 +34,17 @@ module Afterburner
             self.SHARDS_CONFIG[type][k]['shards_count'] = shard_yml[type][k]['shards_count'].to_i
             self.SHARDS_CONFIG[type][k]['shards_count'].times do |i|
               self.SHARDS_CONFIG[type][k][i] = {}
-              self.SHARDS_CONFIG[type][k][i]['ip'] = shard_yml[type][k][i]['ip'] if  shard_yml[type][k][i]['ip']
-              self.SHARDS_CONFIG[type][k][i]['port'] = shard_yml[type][k][i]['port'] if  shard_yml[type][k][i]['port']
-              self.SHARDS_CONFIG[type][k][i]['username'] = shard_yml[type][k][i]['username'] if  shard_yml[type][k][i]['username']
-              self.SHARDS_CONFIG[type][k][i]['password'] = shard_yml[type][k][i]['password'] if  shard_yml[type][k][i]['password']
+              self.SHARDS_CONFIG[type][k][i]['ip'] = shard_yml[type][k][i]['ip'] || 'localhost'
+              self.SHARDS_CONFIG[type][k][i]['port'] = shard_yml[type][k][i]['port'] || 3369
+              self.SHARDS_CONFIG[type][k][i]['username'] = shard_yml[type][k][i]['username'] || 'root'
+              self.SHARDS_CONFIG[type][k][i]['password'] = shard_yml[type][k][i]['password'] || ''
             end
           elsif k == 'master'
             self.SHARDS_CONFIG[type][k] = {}
-            self.SHARDS_CONFIG[type][k]['ip'] = shard_yml[type][k]['ip'] if  shard_yml[type][k]['ip']
-            self.SHARDS_CONFIG[type][k]['port'] = shard_yml[type][k]['port'] if  shard_yml[type][k]['port']
-            self.SHARDS_CONFIG[type][k]['username'] = shard_yml[type][k]['username'] if  shard_yml[type][k]['username']
-            self.SHARDS_CONFIG[type][k]['password'] = shard_yml[type][k]['password'] if  shard_yml[type][k]['password']
+            self.SHARDS_CONFIG[type][k]['ip'] = shard_yml[type][k]['ip'] || 'localhost'
+            self.SHARDS_CONFIG[type][k]['port'] = shard_yml[type][k]['port'] || 3369
+            self.SHARDS_CONFIG[type][k]['username'] = shard_yml[type][k]['username'] || 'root'
+            self.SHARDS_CONFIG[type][k]['password'] = shard_yml[type][k]['password'] || ''
           end
         end
       end
@@ -64,7 +62,7 @@ Afterburner.read_config()
 require 'afterburner/sharded_model'
 require 'afterburner/sharded_associations'
 require 'afterburner/sharded_redis'
-require 'afterburner/analytics'
+#require 'afterburner/analytics'
 require 'afterburner/vbucket_setup'
-require 'afterburner/acts_as_locally_cached'
+#require 'afterburner/acts_as_locally_cached'
 
