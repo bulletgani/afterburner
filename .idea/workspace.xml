@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06fcdb64-2c1c-4a58-a3d4-17023f94d606" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/afterburner/ar_extensions.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tasks/db_override.rake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/afterburner.rb" afterPath="$PROJECT_DIR$/lib/afterburner.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rails/init.rb" afterPath="$PROJECT_DIR$/rails/init.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/afterburner/version.rb" afterPath="$PROJECT_DIR$/lib/afterburner/version.rb" />
     </list>
     <ignored path="afterburner.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,6 +33,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="version.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/afterburner/version.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="18" selection-start="37" selection-end="37" vertical-scroll-proportion="0.013723697">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="init.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rails/init.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -56,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db_override.rake" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="db_override.rake" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasks/db_override.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="0" selection-start="7786" selection-end="7786" vertical-scroll-proportion="2.9722223">
+            <state line="214" column="0" selection-start="7786" selection-end="7786" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,12 +96,12 @@
         <option value="$PROJECT_DIR$/afterburner.gemspec" />
         <option value="$PROJECT_DIR$/Gemfile.lock" />
         <option value="$PROJECT_DIR$/lib/generators/afterburner_generator.rb" />
-        <option value="$PROJECT_DIR$/lib/afterburner/version.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/rails/init.rb" />
         <option value="$PROJECT_DIR$/lib/afterburner/ar_extensions.rb" />
         <option value="$PROJECT_DIR$/lib/afterburner.rb" />
         <option value="$PROJECT_DIR$/tasks/db_override.rake" />
+        <option value="$PROJECT_DIR$/lib/afterburner/version.rb" />
       </list>
     </option>
   </component>
@@ -184,6 +188,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rails" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="afterburner" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -440,13 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/afterburner/version.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="37" selection-end="37" vertical-scroll-proportion="0.013723697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/test_shards.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -464,13 +493,6 @@
     <entry file="file://$PROJECT_DIR$/init.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="41" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -505,7 +527,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tasks/db_override.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="0" selection-start="7786" selection-end="7786" vertical-scroll-proportion="2.9722223">
+        <state line="214" column="0" selection-start="7786" selection-end="7786" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="41" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/afterburner/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="18" selection-start="37" selection-end="37" vertical-scroll-proportion="0.013723697">
           <folding />
         </state>
       </provider>
