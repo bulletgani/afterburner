@@ -1,8 +1,8 @@
 require "yaml"
 require "erb"
+require 'afterburner/version'
 
 module Afterburner
-  require 'afterburner/railtie'
 
   class << self
     attr_accessor :VBUCKET_COUNT
@@ -59,7 +59,7 @@ REF = -1
 # create global shards hash
 Afterburner.read_config()
 
-
+require 'afterburner/railtie'
 require 'afterburner/sharded_model'
 require 'afterburner/sharded_associations'
 require 'afterburner/sharded_redis'
@@ -67,5 +67,3 @@ require 'afterburner/sharded_redis'
 require 'afterburner/vbucket_setup'
 #require 'afterburner/acts_as_locally_cached'
 require 'afterburner/ar_extensions'
-
-Dir["tasks/**/*.rake"].each { |ext| load ext } if defined?(Rake)
