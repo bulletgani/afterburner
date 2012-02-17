@@ -1,10 +1,11 @@
 require 'bundler/gem_tasks'
-require 'rspec/core/rake_task'
+require 'rake'
+
+#Bundler::GemHelper.install_tasks :name => 'afterburner'
 
 require 'fileutils'
 include FileUtils::Verbose
 
-puts " RRRR "
 namespace :db do
 
   def load_shard_config &block
