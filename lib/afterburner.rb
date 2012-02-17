@@ -65,4 +65,6 @@ require 'afterburner/sharded_redis'
 #require 'afterburner/analytics'
 require 'afterburner/vbucket_setup'
 #require 'afterburner/acts_as_locally_cached'
+require 'afterburner/ar_extensions'
 
+Dir["tasks/**/*.rake"].each { |ext| load ext } if defined?(Rake)
