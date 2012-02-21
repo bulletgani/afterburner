@@ -17,7 +17,7 @@ module Afterburner
     unless self.SHARDS_CONFIG
       self.REF_VBUCKET = -1
       self.SHARDS_CONFIG = {}
-      shard_yml = YAML::load(ERB.new(IO.read(Afterburner.directory() + "/config/environments/#{::Rails.env}_shards.yml")).result)
+      #shard_yml = YAML::load(ERB.new(IO.read(Afterburner.directory() + "/config/environments/#{::Rails.env}_shards.yml")).result)
       shard_yml = YAML::load(ERB.new(IO.read("config/environments/#{::Rails.env}_shards.yml")).result)
       # Virtual bucket
       # Every sharded entry falls into exactly one bucket

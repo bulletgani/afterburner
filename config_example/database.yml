@@ -1,12 +1,9 @@
 <% ENV['TEST_ENV_NUMBER'] ||= '' %>
 
-<% require 'shards_config' %>
-<% Afterburner.read_config %>
-
-<%= "#{ENV['RAILS_ENV']}: &#{ENV['RAILS_ENV']}"%>
+<%= "#{::Rails.env}: &#{::Rails.env}"%>
   adapter: mysql2
   encoding: utf8
-  database: <%= ENV['RAILS_ENV']=='test' ? ENV['RAILS_ENV'] + ENV['TEST_ENV_NUMBER'] : ENV['RAILS_ENV']%>
+  database: <%= ::Rails.env=='test' ? ::Rails.env + ENV['TEST_ENV_NUMBER'] : ::Rails.env%>
   username: <%= Afterburner.SHARDS_CONFIG['db']['master']['username'] ? Afterburner.SHARDS_CONFIG['db']['master']['username'] : 'root'%>
   password: <%=  Afterburner.SHARDS_CONFIG['db']['master']['password'] if  Afterburner.SHARDS_CONFIG['db']['master']['password'] %>
   host: <%= Afterburner.SHARDS_CONFIG['db']['master']['ip']%>
