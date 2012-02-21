@@ -1,14 +1,16 @@
 require 'fileutils'
+require 'awesome_print'
 include FileUtils::Verbose
 
 namespace :db do
 
   def load_shard_config &block
     env = ::Rails.env.to_s
-    db_yml = YAML::load(ERB.new(IO.read("config/database.yml")).result)
-    shards_yml = YAML::load(ERB.new(IO.read("config/shards.yml")).result)
-    reference = shards_yml['octopus'][env]['shards']
-    reference = db_yml.merge reference
+    #db_yml = YAML::load(ERB.new(IO.read("config/database.yml")).result)
+    #shards_yml = YAML::load(ERB.new(IO.read("config/shards.yml")).result)
+    #reference = shards_yml['octopus'][env]['shards']
+    #reference = db_yml.merge reference
+    reference = Afterburner.shards_config()
     ActiveRecord::Base.logger = Logger.new(STDOUT)
     ActiveRecord::Base.logger.level = Logger::WARN
     ActiveRecord::Base.configurations = reference.dup
@@ -84,8 +86,6 @@ namespace :db do
     end
 
     task :set_env => :environment do
-      # rename ::Rails_env to <env>__ to prevent octopus from picking up the migrations
-      #::Rails.env = ENV['RAILS_ENV'] + '__' || 'unknown'
       ap "Setting env to #{ENV['RAILS_ENV']}"
     end
 
@@ -109,8 +109,8 @@ namespace :db do
       ap "Current Version", :color => {:string => :blue}
       ap @current_versions, :color => {:hash=> :blue}
 
-      #ap "Existing Migrations", :color => {:string => :yellowish}
-      #ap @existing_migrations, :color => {:hash => :yellowish, :array => :yellowish}
+      ap "Existing Migrations", :color => {:string => :yellowish}
+      ap @existing_migrations, :color => {:hash => :yellowish, :array => :yellowish}
     end
 
 

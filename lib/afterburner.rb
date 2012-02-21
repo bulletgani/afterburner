@@ -13,6 +13,7 @@ end
 
 REF = -1
 
+require 'afterburner/shards_config'
 require 'afterburner/sharded_model'
 require 'afterburner/sharded_associations'
 require 'afterburner/sharded_redis'
