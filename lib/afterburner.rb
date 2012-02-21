@@ -4,6 +4,14 @@ require 'afterburner/version'
 
 module Afterburner
 
+  class Railtie < Rails::Railtie
+    railtie_name :afterburner
+    rake_tasks  do
+      load 'tasks/afterburner.rake'
+    end
+  end
+
+
   class << self
     attr_accessor :VBUCKET_COUNT
     attr_accessor :SHARDS_CONFIG
