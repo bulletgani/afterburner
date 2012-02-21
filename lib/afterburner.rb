@@ -1,5 +1,6 @@
 require "yaml"
 require "erb"
+require 'afterburner/version'
 
 module Afterburner
 
@@ -58,13 +59,12 @@ REF = -1
 # create global shards hash
 Afterburner.read_config()
 
-
+require 'afterburner/railtie'
 require 'afterburner/sharded_model'
 require 'afterburner/sharded_associations'
 require 'afterburner/sharded_redis'
 require 'afterburner/vbucket_setup'
 require 'afterburner/ar_extensions'
-require 'afterburner/railtie'
 #require 'afterburner/acts_as_locally_cached'
 #require 'afterburner/analytics'
 
