@@ -6,11 +6,10 @@ namespace :db do
 
   def load_shard_config &block
     env = ::Rails.env.to_s
-    #db_yml = YAML::load(ERB.new(IO.read("config/database.yml")).result)
-    #shards_yml = YAML::load(ERB.new(IO.read("config/shards.yml")).result)
-    #reference = shards_yml['octopus'][env]['shards']
-    #reference = db_yml.merge reference
-    reference = Afterburner.shards_config()
+    db_yml = YAML::load(ERB.new(IO.read("config/database.yml")).result)
+    shards_yml = YAML::load(ERB.new(IO.read("config/shards.yml")).result)
+    reference = shards_yml['octopus'][env]['shards']
+    reference = db_yml.merge reference
     ActiveRecord::Base.logger = Logger.new(STDOUT)
     ActiveRecord::Base.logger.level = Logger::WARN
     ActiveRecord::Base.configurations = reference.dup
@@ -23,6 +22,7 @@ namespace :db do
       ActiveRecord::Base.configurations[name] = reference[name]
 
       ::Rails.env = name if name != env
+      ap "yielding to #{name} #{env}"
       yield name, env
       ::Rails.env = env
     end
@@ -105,6 +105,9 @@ namespace :db do
         @existing_migrations[name] = @migrations[name].migrated
         @out_of_sync = true if @current_versions[env] != @current_versions[name]
       end
+
+      ap "Migrations ", :color => {:string => :green}
+      ap @migrations, :color => {:hash=> :green}
 
       ap "Current Version", :color => {:string => :blue}
       ap @current_versions, :color => {:hash=> :blue}
