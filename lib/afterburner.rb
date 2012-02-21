@@ -59,7 +59,7 @@ REF = -1
 # create global shards hash
 Afterburner.read_config()
 
-require 'afterburner/railtie'
+#require 'afterburner/railtie'
 require 'afterburner/sharded_model'
 require 'afterburner/sharded_associations'
 require 'afterburner/sharded_redis'
