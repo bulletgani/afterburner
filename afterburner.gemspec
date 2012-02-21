@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'hiredis', '~> 0.4.1'
   s.add_dependency 'redis', '~> 2.2.2'
   s.add_dependency 'uuid'
-  s.add_runtime_dependency(%q<activesrecord>, [">= 3.0"])
+  s.add_dependency 'resque'
+  s.add_runtime_dependency(%q<activerecord>, [">= 3.0"])
   s.add_runtime_dependency(%q<railties>, [">= 3.0"])
 end

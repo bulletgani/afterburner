@@ -19,6 +19,6 @@ require 'afterburner/sharded_associations'
 require 'afterburner/sharded_redis'
 require 'afterburner/vbucket_setup'
 require 'afterburner/ar_extensions'
-#require 'afterburner/acts_as_locally_cached'
-#require 'afterburner/analytics'
+require 'afterburner/acts_as_locally_cached'
+require 'afterburner/analytics'
 
