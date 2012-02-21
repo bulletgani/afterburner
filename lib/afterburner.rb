@@ -22,4 +22,4 @@ require 'afterburner/vbucket_setup'
 require 'afterburner/ar_extensions'
 require 'afterburner/acts_as_locally_cached'
 require 'afterburner/analytics'
-
+Afterburner.shards_config()
