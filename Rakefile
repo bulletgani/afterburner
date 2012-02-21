@@ -1,3 +1,8 @@
+require "bundler"
+Bundler.setup
+
+require "rake"
+
 begin
   require "bundler"
   Bundler.setup
