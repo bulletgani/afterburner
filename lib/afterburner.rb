@@ -62,9 +62,10 @@ Afterburner.read_config()
 require 'afterburner/sharded_model'
 require 'afterburner/sharded_associations'
 require 'afterburner/sharded_redis'
-#require 'afterburner/analytics'
 require 'afterburner/vbucket_setup'
-#require 'afterburner/acts_as_locally_cached'
 require 'afterburner/ar_extensions'
+require 'afterburner/railtie'
+#require 'afterburner/acts_as_locally_cached'
+#require 'afterburner/analytics'
 
-Dir["tasks/**/*.rake"].each { |ext| load ext } if defined?(Rake)
+#Dir["tasks/**/*.rake"].each { |ext| load ext } if defined?(Rake)
