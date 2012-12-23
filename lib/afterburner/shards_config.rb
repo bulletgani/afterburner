@@ -9,16 +9,16 @@ module Afterburner
     attr_accessor :REF_VBUCKET
   end
 
-  def self.directory()
-    @directory ||= defined?(Rails) ?  Rails.root.to_s : Dir.pwd
-  end
-
   def self.shards_config
     unless self.SHARDS_CONFIG
       self.REF_VBUCKET = -1
       self.SHARDS_CONFIG = {}
-      shard_yml = YAML::load(ERB.new(IO.read(Afterburner.directory() + "/config/environments/#{::Rails.env}_shards.yml")).result)
-      shard_yml = YAML::load(ERB.new(IO.read("config/environments/#{::Rails.env}_shards.yml")).result)
+      begin
+        shard_yml = YAML::load(ERB.new(IO.read("config/environments/#{::Rails.env}_shards.yml")).result)
+      rescue Exception => e
+        puts "run rails g afterburner:config create_config_files"
+        shard_yml ={'vbucket_count' => 720, 'db' => {'master' => {}}, 'redis' => {'master' => ''}}
+      end
       # Virtual bucket
       # Every sharded entry falls into exactly one bucket
       # A given set of buckets in each environment is mapped to a database based on SHARDS_COUNT

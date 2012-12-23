@@ -4,6 +4,7 @@ module Afterburner
 
   class Railtie < Rails::Railtie
     railtie_name :afterburner
+
     rake_tasks  do
       load 'tasks/afterburner.rake'
     end
@@ -21,4 +22,4 @@ require 'afterburner/vbucket_setup'
 require 'afterburner/ar_extensions'
 require 'afterburner/acts_as_locally_cached'
 require 'afterburner/analytics'
-
+Afterburner.shards_config()
