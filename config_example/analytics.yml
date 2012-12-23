@@ -1,3 +1,4 @@
+# Design and implementation of analytics by Blake Miller
 # top level keys are 'event_id's for analytics
 # for each event, this file defines
 #   1) a priority level in [0,1,2] where 0 is super-critically-high priority and 2 is "meh" priority

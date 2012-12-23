@@ -1,3 +1,5 @@
+# design and implementation of analytics by Blake Miller
+
 require 'resque'
 
 module Analytics

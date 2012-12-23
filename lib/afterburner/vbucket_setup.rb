@@ -2,6 +2,7 @@ module VbucketSetup
 
   def get_vbucket(id=nil)
     id = get_shard_key(id) if id.nil?
+    # function by Ben Karst
     Digest::MD5.hexdigest(id.to_s).gsub(/[a-z]/i) { |s| s.ord.to_s }.to_i % VBUCKET_COUNT
   end
 
